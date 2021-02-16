@@ -1,0 +1,45 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../images/kali-trail.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.panel1 {
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+}
+p.description {
+    text-align: center;
+    font-style: italic;
+}
+
+.skillmax {
+    margin: 0 10px 0 10px;
+    border-radius: 20px;
+    background-color: grey;
+
+}
+
+.skillvalue {
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

@@ -136,3 +136,9 @@ p {
 i.p {
     font-size: 1.25rem;
 }
+
+hr {
+    margin: 20px 0;
+    opacity: 0.2;
+    width: 100%;
+}

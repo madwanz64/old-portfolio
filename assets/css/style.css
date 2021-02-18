@@ -46,6 +46,24 @@ main {
     border-radius: 20px;
 }
 
+.foto {
+    position: relative;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+}
+
+.fotodiri {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgba(15, 16, 20, 0.9);
+}
+
 p.description {
     text-align: center;
     font-style: italic;

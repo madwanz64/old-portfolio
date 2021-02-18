@@ -1,17 +1,30 @@
-* {
+html {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     text-decoration: none;
     font-family: Roboto;
-    line-height: 1.15;
+    font-size: 0.875rem;
     color: white;
 }
 
-body {
+@media screen and (min-width:576px) {
+    html {
+        font-size: 1rem;
+    }
+}
+
+.background {
     background-image: url(../images/kali-trail.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
 }
 
 header {
@@ -38,22 +51,17 @@ p.description {
     font-style: italic;
 }
 
-.personaldatatitle i {
+.title i {
     float: left;
-    line-height: 30px;
     padding-right: 10px;
 }
 
-.personaldatatitle h4 {
-    line-height: 30px;
-}
+.title h4 {}
 
 .personaldatacontent i {
     float: left;
     padding: 0 10px 0 20px;
 }
-
-.personaldatacontent p {}
 
 .skilllist {
     margin-left: 20px;
@@ -76,7 +84,6 @@ p.description {
 
 .skillbutton {
     text-align: right;
-    line-height: 50px;
 }
 
 .skillbutton i {
@@ -96,12 +103,11 @@ p.description {
     width: 100%;
     overflow: hidden;
     display: block;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .skilldropdown label {
     margin: 5px 0 5px 35px;
-    line-height: 30px;
 }
 
 .skillmax {

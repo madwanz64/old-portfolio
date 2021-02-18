@@ -56,7 +56,9 @@ p.description {
     padding-right: 10px;
 }
 
-.title h4 {}
+.title h4 {
+    display: inline-block;
+}
 
 .personaldatacontent i {
     float: left;

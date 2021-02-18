@@ -48,6 +48,7 @@ main {
 
 .foto {
     position: relative;
+    margin-bottom: 10px;
 }
 
 .foto img {
@@ -58,7 +59,8 @@ main {
 .fotodiri {
     position: absolute;
     bottom: 8px;
-    left: 16px;
+    left: 50%;
+    transform: translate(-50%, 0);
     padding: 8px;
     border-radius: 8px;
     background-color: rgba(15, 16, 20, 0.9);

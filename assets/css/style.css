@@ -4,11 +4,23 @@ html {
     box-sizing: border-box;
     text-decoration: none;
     font-family: Roboto;
-    font-size: 0.875rem;
+    font-size: .875rem;
     color: white;
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width:400px) {
+    html {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    html {
+        font-size: .875rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
     html {
         font-size: 1rem;
     }
@@ -27,23 +39,38 @@ html {
     z-index: -100;
 }
 
-header {
-    margin: 20px 20px 0 20px;
-    padding: 20px;
-    background-color: rgba(15, 16, 20, 0.9);
-    border-radius: 20px;
-    text-align: center;
-}
-
-main {
-    min-height: 100vh;
-    padding: 20px;
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto
 }
 
 .panel1 {
+    float: left;
+    width: 100%;
+}
+
+.panel2 {
+    float: left;
+    width: 100%;
+}
+
+.isipanel {
+    margin: 8px;
     padding: 20px;
     background-color: rgba(15, 16, 20, 0.9);
     border-radius: 20px;
+}
+
+@media (min-width:768px) {
+    .panel1 {
+        float: left;
+        width: 33.33333%;
+    }
+    .panel2 {
+        float: left;
+        width: 66.66666%;
+    }
 }
 
 .foto {
@@ -74,43 +101,37 @@ p.description {
 
 .title i {
     float: left;
-    padding-right: 10px;
-}
-
-.title h4 {
-    display: inline-block;
+    padding-right: 5px;
 }
 
 .personaldatacontent i {
     float: left;
-    padding: 0 10px 0 20px;
-}
-
-.skilllist {
-    margin-left: 20px;
-}
-
-.skill i {
-    font-size: 1.25rem;
+    padding: 0 10px 0 10px;
 }
 
 .skilltitle {
     float: left;
-    margin: auto;
+    width: 100%;
 }
 
-.skilltitle label {
-    padding-left: 5px;
-    font-size: 1.2em;
-    font-weight: 500;
+.skilldescription {
+    width: 95%;
+    float: left;
+}
+
+.skilldescription i {
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+.skilldescription p {
+    float: left;
 }
 
 .skillbutton {
+    width: 5%;
+    float: left;
     text-align: right;
-}
-
-.skillbutton i {
-    font-size: 1.5rem;
 }
 
 .skillbutton .fa-caret-square-down {
@@ -122,21 +143,27 @@ p.description {
 }
 
 .skilldropdown {
-    height: 0;
-    width: 100%;
+    width: calc(100% - 40px);
     overflow: hidden;
     display: block;
-    margin: 5px 0;
+    margin: 0 0 0 40px;
 }
 
-.skilldropdown label {
-    margin: 5px 0 5px 35px;
+.skilldropdown .skillitem {
+    height: 0rem;
+    transition: 0.5s;
+}
+
+.skilldropdown.show .skillitem {
+    height: 2.9rem;
+    transition: 0.5s;
 }
 
 .skillmax {
+    width: 100%;
     border-radius: 20px;
     background-color: lightgrey;
-    margin: 5px 0 5px 35px;
+    margin-bottom: .5rem;
 }
 
 .skillvalue {
@@ -144,4 +171,36 @@ p.description {
     background-color: rgb(18, 60, 85);
     color: white;
     text-align: center;
+}
+
+.languagecontent {
+    width: calc(100% - 10px);
+    margin-left: 10px;
+}
+
+.languagemax {
+    width: 100%;
+    border-radius: 20px;
+    background-color: lightgrey;
+    margin-top: 5px;
+}
+
+.languagevalue {
+    border-radius: 20px;
+    background-color: rgb(18, 60, 85);
+    color: white;
+    text-align: center;
+}
+
+.languagedescription {
+    font-size: .75rem;
+    text-align: right;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: .5rem;
+}
+
+.languagedescription a {
+    text-decoration: none;
+    color: white;
 }

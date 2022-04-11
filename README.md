@@ -1,1 +1,0 @@
-Muhammad Ridwan Fauzi Curriculum Vitae

@@ -1,0 +1,23 @@
+{
+  "name": "id.readone.portfolio",
+  "version": "1.0.0",
+  "description": "Website portfolio Muhammad Ridwan Fauzi, seorang back end developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Muhammad",
+    "Ridwan",
+    "Fauzi",
+    "portfolio",
+    "back",
+    "end",
+    "developer"
+  ],
+  "author": "Muhammad Ridwan Fauzi",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.2"
+  }
+}

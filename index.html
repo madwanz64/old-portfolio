@@ -1,354 +1,407 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Muhammad Ridwan Fauzi</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ridwan Fauzi | Back End Developer</title>
+    <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+<body>
+
+    <!-- Header Start -->
+
+    <header class=" bg-transparent absolute top-0 left-0 w-full flex items-center z-10 ">
         <div class="container">
-            <a class="navbar-brand" href="#page-top">ReadOne</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="#contact">Contact</a></li>
-                </ul>
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-sky-900 block py-6">ReadOne</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 md:hidden">
+                        <span
+                            class="w-[30px] h-[2px] my-2 block bg-slate-500 transition duration-300 ease-in-out origin-top-left"></span>
+                        <span
+                            class="w-[30px] h-[2px] my-2 block bg-slate-500 transition duration-300 ease-in-out"></span>
+                        <span
+                            class="w-[30px] h-[2px] my-2 block bg-slate-500 transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg w-full right-0 top-full md:block md:relative md:bg-transparent md:max-w-full md:shadow-none md:rounded-none">
+                        <ul class="block md:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base text-slate-500 py-2 mx-8 flex hover:text-sky-900">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-slate-500 py-2 mx-8 flex hover:text-sky-900">About
+                                    Me</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio"
+                                    class="text-base text-slate-500 py-2 mx-8 flex hover:text-sky-900">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#skills"
+                                    class="text-base text-slate-500 py-2 mx-8 flex hover:text-sky-900">Skills</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead bg-secondary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-5" src="assets/img/ridwan.png" alt="..." />
-            <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase mb-0">Muhammad Ridwan Fauzi</h1>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Freelance Web Developer</p>
         </div>
     </header>
-    <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="portfolio">
+
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36 pb-32">
         <div class="container">
-            <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/zapas.png" alt="..." />
-                    </div>
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 md:w-1/2">
+                    <h1 class="text-base font-semibold text-sky-700 md:text-lg">Hello Everyone 👋, I'm <span
+                            class="block font-bold text-sky-900 text-xl md:text-2xl lg:text-4xl">Muhammad Ridwan
+                            Fauzi</span></h1>
+                    <h2 class="font-medium text-slate-700 text-lg mb-5 lg:text-xl">Back End Developer</h2>
+                    <p class="font-medium text-slate-500 mb-10 leading-relaxed lg:text-lg">This is a portfolio website
+                        that contains everything about me, the projects I've worked on, and some information about my
+                        programming skills.</p>
+                    <a href="#contact-me"
+                        class="text-base font-semibold text-white bg-sky-900 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out">Contact
+                        Me</a>
                 </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/cashier.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/sekolahku.png" alt="..." />
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/smartedu.png" alt="..." />
+                <div class="w-full self-end px-4 md:w-1/2">
+                    <div class="mt-10 relative lg:mt-0">
+                        <img src="dist/img/readone.png" alt="Muhammad Ridwan Fauzi" class="max-w-full mx-auto">
+                        <span
+                            class="absolute -bottom-20 md:-bottom-20 -z-10 left-1/2 -translate-x-1/2 md:scale-110 lg:scale-125"><svg
+                                width="300" height="450" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#0C4A6E"
+                                    d="M42.1,-65.2C54.7,-57.5,64.9,-45.9,71.3,-32.4C77.6,-18.9,80.1,-3.5,79.5,12.5C78.9,28.6,75.3,45.3,65.5,56.8C55.7,68.3,39.7,74.4,24.2,76.2C8.7,77.9,-6.3,75.2,-22.2,72.1C-38.1,69.1,-54.8,65.5,-64.9,55.4C-74.9,45.3,-78.3,28.5,-81.4,11.3C-84.5,-5.9,-87.3,-23.5,-81.7,-37.9C-76,-52.3,-62,-63.5,-47,-70C-32,-76.6,-16,-78.5,-0.6,-77.5C14.8,-76.6,29.6,-72.8,42.1,-65.2Z"
+                                    transform="translate(100 100)" />
+                            </svg></span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- About Section-->
-    <section class="page-section bg-primary text-white mb-0" id="about">
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+
+    <section id="about" class="pt-36 pb-32">
         <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">About Me</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-sky-900 mb-3">About Me</h4>
+                    <h2 class="font-bold text-slate-700 text-2xl mb-3 max-w-xl lg:text-4xl">Muhammad Ridwan Fauzi</h2>
+                    <p class="font-medium text-base text-slate-500 lg:text-lg">I am a backend developer with more than 1
+                        year experience. Started a programming career by becoming a freelance web developer. I am used
+                        to using the PHP programming language, but I also have professional experience using the
+                        JavaScript and Java programming languages.</p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-bold text-slate-700 text-xl mb-3 lg:text-3xl lg:pt-10">My Social Media</h3>
+                    <p class="font-medium text-base text-slate-500 mb-6 lg:text-lg">Let's connect with each other on
+                        social media. Who knows we will work together in the future. 😉</p>
+                    <div class="flex items-center">
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/in/readone" target="_blank"
+                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-slate-700 border border-slate-300 hover:border-sky-900 hover:bg-sky-900 hover:text-white">
+                            <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>LinkedIn</title>
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/madwanz64" target="_blank"
+                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-slate-700 border border-slate-300 hover:border-sky-900 hover:bg-sky-900 hover:text-white">
+                            <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram</title>
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                            </svg>
+                        </a>
+
+                        <!-- Gitlab -->
+                        <a href="https://gitlab.com/madwanz64" target="_blank"
+                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-slate-700 border border-slate-300 hover:border-sky-900 hover:bg-sky-900 hover:text-white">
+                            <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>GitLab</title>
+                                <path
+                                    d="m23.6004 9.5927-.0337-.0862L20.3.9814a.851.851 0 0 0-.3362-.405.8748.8748 0 0 0-.9997.0539.8748.8748 0 0 0-.29.4399l-2.2055 6.748H7.5375l-2.2057-6.748a.8573.8573 0 0 0-.29-.4412.8748.8748 0 0 0-.9997-.0537.8585.8585 0 0 0-.3362.4049L.4332 9.5015l-.0325.0862a6.0657 6.0657 0 0 0 2.0119 7.0105l.0113.0087.03.0213 4.976 3.7264 2.462 1.8633 1.4995 1.1321a1.0085 1.0085 0 0 0 1.2197 0l1.4995-1.1321 2.4619-1.8633 5.006-3.7489.0125-.01a6.0682 6.0682 0 0 0 2.0094-7.003z" />
+                            </svg>
+                        </a>
+
+                        <!-- Github -->
+                        <a href="https://github.com/madwanz64" target="_blank"
+                            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-slate-700 border border-slate-300 hover:border-sky-900 hover:bg-sky-900 hover:text-white">
+                            <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>GitHub</title>
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <!-- About Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ms-auto">
-                    <p class="lead">Saya adalah seorang web developer yang lebih banyak berfokus di bagian back-end dari
-                        sebuah website. Saya memiliki pengalaman kurang lebih 1 tahun dalam bidang pemrograman website.
+        </div>
+    </section>
+
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+
+    <section id="portfolio" class="pt-36 pb-16 bg-slate-700">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-2xl mx-auto text-center mb-16">
+                    <h4 class="font-bold uppercase text-sky-50 mb-2">Portfolio</h4>
+                    <h2 class="font-bold text-slate-300 text-3xl lg:text-4xl mb-4">Latest Projects</h2>
+                    <p class="font-medium text-md text-slate-400 md:text-lg">Explore the latest projects that I made.
+                        Showing the 4 most recent projects. For more details click 'Show More'</p>
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div
+                        class="rounded-md shadow-md overflow-hidden grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100">
+                        <img src="dist/img/projects/zapas.png" alt="Zakat Pas Sasaran" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-slate-300 mt-5 mb-3">Zakat Pas Sasaran (ZAPAS)</h3>
+                    <p class="font-medium text-base text-slate-400">Zapas is a website that is able to display zakat
+                        distribution data which is visualized directly into a gradation map.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div
+                        class="rounded-md shadow-md overflow-hidden grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100">
+                        <img src="dist/img/projects/sekolahku.png" alt="Learning Management System Sekolahku"
+                            width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-slate-300 mt-5 mb-3">LMS Sekolahku</h3>
+                    <p class="font-medium text-base text-slate-400">LMS Sekolahku or Learning Management System is a
+                        simple learning management system that can be used to simplify and personalize online learning
+                        systems.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div
+                        class="rounded-md shadow-md overflow-hidden grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100">
+                        <img src="dist/img/projects/cashier.png" alt="Aplikasi Kasir" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-slate-300 mt-5 mb-3">Aplikasi Kasir</h3>
+                    <p class="font-medium text-base text-slate-400">This cashier application is a website that can be
+                        used to record purchases of goods, display a list of transactions, and also data for each item.
                     </p>
                 </div>
-                <div class="col-lg-4 me-auto">
-                    <p class="lead">Saya memiliki kemampuan pemrograman website dasar seperti HTML, CSS, JS, PHP, dan
-                        MySQL. Selain itu juga saya familiar dengan framework PHP yaitu Laravel.</p>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div
+                        class="rounded-md shadow-md overflow-hidden grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100">
+                        <img src="dist/img/projects/smartedu.png" alt="Smart Edu Psychotest" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-slate-300 mt-5 mb-3">Portal Psikotest</h3>
+                    <p class="font-medium text-base text-slate-400">Portal Psikotest is one of the projects I worked on
+                        at the request of a psychology consulting agency with online test features and automatic
+                        processing of results.</p>
                 </div>
             </div>
-            <!-- About Section Button-->
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light me-3 mb-3" href="Curriculum Vitae.pdf">
-                    <i class="fas fa-download me-2"></i>
-                    Download CV
-                </a>
-                <a class="btn btn-xl btn-outline-light mb-3" href="Portfolio.pdf">
-                    <i class="fas fa-download me-2"></i>
-                    Download Portofolio
-                </a>
+            <div class="w-full text-center">
+                <a href="#"
+                    class="text-base font-semibold text-sky-900 bg-white py-3 px-8 rounded-full hover:shadow-lg hover:opacity-70 transition duration-300 ease-in-out">Show
+                    more</a>
             </div>
         </div>
     </section>
-    <!-- Footer-->
-    <footer class="footer text-center">
+
+    <!-- Portfolio Section End -->
+
+    <!-- Skills Section Start -->
+
+    <section id="skills" class="pt-36 pb-32">
         <div class="container">
-            <div class="row d-flex justify-content-center" id="contact">
-                <!-- Footer Social Icons-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">CONTACT ME</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://wa.me/6283829253545"><i
-                            class="fab fa-fw fa-whatsapp"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://t.me/madwanz64"><i
-                            class="fab fa-fw fa-telegram"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://instagram.com/madwanz64"><i
-                            class="fab fa-fw fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://linkedin.com/in/readone"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
+            <div class="w-full px-4">
+                <div class="max-w-2xl mx-auto text-center mb-16">
+                    <h4 class="font-bold uppercase text-sky-900 mb-2">Skills</h4>
+                    <h2 class="font-bold text-slate-700 text-3xl lg:text-4xl mb-4">My Programming Skills</h2>
+                    <p class="font-medium text-md text-slate-500 md:text-lg">List of programming languages and
+                        frameworks that I have used in website development</p>
                 </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center max-w-xl xl:w-10/12 mx-auto">
+                <div
+                    class="w-1/2 m-1 flex aspect-square rounded-lg grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 border border-slate-300 max-w-[100px]">
+                    <span class="mx-auto my-auto"><img src="dist/img/skills/html5.svg" alt="HTML5"
+                            class="max-w-[70px] max-h-[70px]"></span>
+                </div>
+                <div
+                    class="w-1/2 m-1 flex aspect-square rounded-lg grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 border border-slate-300 max-w-[100px]">
+                    <span class="mx-auto my-auto"><img src="dist/img/skills/css3.svg" alt="CSS3"
+                            class="max-w-[70px] max-h-[70px]"></span>
+                </div>
+                <div
+                    class="w-1/2 m-1 flex aspect-square rounded-lg grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 border border-slate-300 max-w-[100px]">
+                    <span class="mx-auto my-auto"><img src="dist/img/skills/javascript.svg" alt="JavaScript"
+                            class="max-w-[70px] max-h-[70px]"></span>
+                </div>
+                <div
+                    class="w-1/2 m-1 flex aspect-square rounded-lg grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 border border-slate-300 max-w-[100px]">
+                    <span class="mx-auto my-auto"><img src="dist/img/skills/bootstrap.svg" alt="Bootstrap"
+                            class="max-w-[70px] max-h-[70px]"></span>
+                </div>
+                <div
+                    class="w-1/2 m-1 flex aspect-square rounded-lg grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 border border-slate-300 max-w-[100px]">
+                    <span class="mx-auto my-auto"><img src="dist/img/skills/tailwindcss.svg" alt="TailwindCSS"
+                            class="max-w-[70px] max-h-[70px]"></span>
+                </div>
+                <div
+                    class="w-1/2 m-1 flex aspect-square rounded-lg grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 border border-slate-300 max-w-[100px]">
+                    <span class="mx-auto my-auto"><img src="dist/img/skills/php.svg" alt="PHP"
+                            class="max-w-[70px] max-h-[70px]"></span>
+                </div>
+                <div
+                    class="w-1/2 m-1 flex aspect-square rounded-lg grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 border border-slate-300 max-w-[100px]">
+                    <span class="mx-auto my-auto"><img src="dist/img/skills/laravel.svg" alt="Laravel"
+                            class="max-w-[70px] max-h-[70px]"></span>
+                </div>
+                <div
+                    class="w-1/2 m-1 flex aspect-square rounded-lg grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 border border-slate-300 max-w-[100px]">
+                    <span class="mx-auto my-auto"><img src="dist/img/skills/java.svg" alt="Java"
+                            class="max-w-[70px] max-h-[70px]"></span>
+                </div>
+                <div
+                    class="w-1/2 m-1 flex aspect-square rounded-lg grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 border border-slate-300 max-w-[100px]">
+                    <span class="mx-auto my-auto"><img src="dist/img/skills/quarkus.svg" alt="Quarkus"
+                            class="max-w-[70px] max-h-[70px]"></span>
+                </div>
+                <div
+                    class="w-1/2 m-1 flex aspect-square rounded-lg grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 border border-slate-300 max-w-[100px]">
+                    <span class="mx-auto my-auto"><img src="dist/img/skills/mysql.svg" alt="MySQL"
+                            class="max-w-[70px] max-h-[70px]"></span>
+                </div>
+                <div
+                    class="w-1/2 m-1 flex aspect-square rounded-lg grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 border border-slate-300 max-w-[100px]">
+                    <span class="mx-auto my-auto"><img src="dist/img/skills/postgresql.svg" alt="PostgreSQL"
+                            class="max-w-[70px] max-h-[70px]"></span>
+                </div>
+                <div
+                    class="w-1/2 m-1 flex aspect-square rounded-lg grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 border border-slate-300 max-w-[100px]">
+                    <span class="mx-auto my-auto"><img src="dist/img/skills/mongodb.svg" alt="MongoDB"
+                            class="max-w-[70px] max-h-[70px]"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section End -->
+
+    <!-- Footer Section Start -->
+
+    <footer class="bg-slate-700 pt-24 pb-12">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate font-medium md:w-2/3">
+                    <h3 class="font-semibold text-xl mb-2 text-white">Contact Me</h3>
+                    <form action="" id="contact-me">
+                        <div class="w-full flex flex-wrap">
+                            <div class="w-full px-4 pb-4 md:w-1/2">
+                                <label for="name" class="text-base font-semibold text-white cursor-pointer">Nama</label>
+                                <input type="text" id="name"
+                                    class="w-full bg-slate-200 text-slate-900 p-3 rounded-md focus:outline-none focus:ring-sky-900 focus:ring-1 focus:border-sky-900">
+                            </div>
+                            <div class="w-full px-4 pb-4 md:w-1/2">
+                                <label for="email"
+                                    class="text-base font-semibold text-white cursor-pointer">E-mail</label>
+                                <input type="text" id="email"
+                                    class="w-full bg-slate-200 text-slate-900 p-3 rounded-md focus:outline-none focus:ring-sky-900 focus:ring-1 focus:border-sky-900">
+                            </div>
+                        </div>
+                        <div class="w-full px-4 pb-4">
+                            <label for="message"
+                                class="text-base font-semibold text-white cursor-pointer">Message</label>
+                            <textarea id="message" cols="30" rows="3"
+                                class="w-full bg-slate-200 text-slate-900 p-3 rounded-md focus:outline-none focus:ring-sky-900 focus:ring-1 focus:border-sky-900"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="px-8 w-full py-2 border border-slate-300 rounded-lg bg-slate-300 text-slate-900 font-semibold">Send</button>
+                    </form>
+                </div>
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+                    <h2 class="font-semibold text-2xl text-white mb-4">Muhammad Ridwan Fauzi</h2>
+                    <h3 class="font-semibold text-xl mb-2 text-white">Back End Developer | <br> PHP, JavaScript, Java |
+                        <br>
+                        MySQL, PostgreSQL, MongoDB
+                    </h3>
+                    <p><a href="mailto:madwanz64@gmail.com">madwanz64@gmail.com</a></p>
+                    <p><a href="https://wa.me/6283829253545">+62 838 2925 3545</a></p>
+                    <p>Bandung, West Java, Indonesia</p>
+                </div>
+            </div>
+
+            <div class="w-full pt-10 border-t border-slate-500">
+                <div class="flex items-center justify-center mb-3">
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/readone" target="_blank"
+                        class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-slate-300 border border-slate-300 hover:border-white hover:bg-white hover:text-slate-700">
+                        <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>LinkedIn</title>
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/madwanz64" target="_blank"
+                        class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-slate-300 border border-slate-300 hover:border-white hover:bg-white hover:text-slate-700">
+                        <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Instagram</title>
+                            <path
+                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                        </svg>
+                    </a>
+
+                    <!-- Gitlab -->
+                    <a href="https://gitlab.com/madwanz64" target="_blank"
+                        class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-slate-300 border border-slate-300 hover:border-white hover:bg-white hover:text-slate-700">
+                        <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>GitLab</title>
+                            <path
+                                d="m23.6004 9.5927-.0337-.0862L20.3.9814a.851.851 0 0 0-.3362-.405.8748.8748 0 0 0-.9997.0539.8748.8748 0 0 0-.29.4399l-2.2055 6.748H7.5375l-2.2057-6.748a.8573.8573 0 0 0-.29-.4412.8748.8748 0 0 0-.9997-.0537.8585.8585 0 0 0-.3362.4049L.4332 9.5015l-.0325.0862a6.0657 6.0657 0 0 0 2.0119 7.0105l.0113.0087.03.0213 4.976 3.7264 2.462 1.8633 1.4995 1.1321a1.0085 1.0085 0 0 0 1.2197 0l1.4995-1.1321 2.4619-1.8633 5.006-3.7489.0125-.01a6.0682 6.0682 0 0 0 2.0094-7.003z" />
+                        </svg>
+                    </a>
+
+                    <!-- Github -->
+                    <a href="https://github.com/madwanz64" target="_blank"
+                        class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-slate-300 border border-slate-300 hover:border-white hover:bg-white hover:text-slate-700">
+                        <svg class="fill-current" width="20" role="img" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub</title>
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="font-medium text-base text-slate-300 text-center">Created by <span class="text-white">Muhammad
+                        Ridwan Fauzi</span> with <span class="text-sky-500"><a href="https://tailwindcss.com"
+                            target="_blank">TailwindCSS</a></span></p>
             </div>
         </div>
     </footer>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Zapas</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/zapas.png" alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Zapas adalah sebuah website yang mampu menampilkan data persebaran zakat
-                                    yang divisualisasikan langsung ke dalam sebuah peta gradasi. Project ini dibuat
-                                    menggunakan HTML, CSS, JavaScript, PHP, dan MySQL. Project ini terakhir diedit pada
-                                    bulan Januari 2021
-                                </p>
-                                <!-- <a class="btn btn-primary" href="https://madwanz64.github.io/zapas" target="_blank">Link
-                                    Project</a> -->
-                                <button class="btn btn-danger" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Aplikasi Kasir</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cashier.png" alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Aplikasi kasir ini adalah sebuah website yang dapat digunakan untuk
-                                    mencatat transaksi pembelian barang, menampilkan daftar transaksi, dan juga data
-                                    barang yang ada. Website ini dibuat dengan framework Laravel 8 pada bulan April
-                                    2022.
-                                </p>
-                                <a class="btn btn-primary" href="https://www.tebakdiri.com/cashier/"
-                                    target="_blank">Link Project</a>
-                                <button class="btn btn-danger" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 3-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">LMS Sekolahku</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/sekolahku.png"
-                                    alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">LMS Sekolahku atau Learning Management System ini merupakan sebuah
-                                    learning management system sederhana yang dapat digunakan untuk mempermudah dan
-                                    personalisasi sistem pembelajaran daring. Fitur di dalamnya terdapat pembuatan
-                                    course, enrollment, presensi kehadiran siswa, form pengumpulan tugas, dan juga
-                                    penilaian juga rekapitulasi nilai atau kehadiran yang dapat dilakukan oleh guru.
-                                    Project ini dibuat dengan menggunakan framework Laravel 6 pada bulan Maret 2022.
-                                </p>
-                                <!-- <a href="https://www.tebakdiri.com/sekolahku/" class="btn btn-primary"
-                                    target="_blank">Link Project</a> -->
-                                <button class="btn btn-danger" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 4-->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Portal Psikotes
-                                </h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/smartedu.png" alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Portal Psikotes ini merupakan salah satu project yang saya kerjakan dari
-                                    permintaan sebuah lembaga konsultan psikologi. Portal psikotes ini juga dilengkapi
-                                    dengan fitur pemrosesan hasil psikotes secara otomatis yang langsung diperoleh saat
-                                    user selesai mengerjakan psikotes. Project ini dibuat dengan menggunakan bahasa
-                                    pemrograman dasar yaitu HTML, CSS, JS, PHP dan MySQL. Project ini terakhir
-                                    diperbarui pada bulan Agustus 2021.
-                                </p>
-                                <!-- <a href="https://smartedupsychotest.com/" class="btn btn-primary" target="_blank">Link
-                                    Project</a> -->
-                                <button class="btn btn-danger" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <!-- Footer Section End -->
+
+    <script src="dist/js/script.js"></script>
 </body>
 
 </html>

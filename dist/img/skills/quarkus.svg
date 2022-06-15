@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="79.375mm" height="79.375mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 7938 7938"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:#091313}
+    .fil0 {fill:#4695EB}
+    .fil1 {fill:#FE004A}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M0 1411l0 5186c0,265 60,439 152,624 342,689 948,716 1647,716 1047,0 2093,0 3140,0 -41,-177 -147,-417 -224,-588 -94,-209 -153,-391 -247,-600l-482 -1176c-204,150 -616,1482 -811,1482l-1799 0c-309,0 -494,-185 -494,-494l0 -5186c0,-309 185,-494 494,-494l5186 0c309,0 494,185 494,494l0 5186c0,662 -771,494 -1588,494 28,120 126,342 177,458 134,303 107,398 241,424l711 0c743,0 1341,-598 1341,-1341l0 -5186c0,-472 -136,-754 -379,-997 -234,-235 -507,-414 -962,-414l-5256 0c-779,0 -1341,580 -1341,1411z"/>
+  <g id="_897536208">
+   <g>
+    <polygon class="fil0" points="3969,2091 5156,2776 5156,2091 5156,1405 "/>
+    <polygon class="fil1" points="2781,2776 3969,2091 2781,1405 2781,2091 "/>
+   </g>
+   <g>
+    <polygon class="fil2" points="3969,2091 2781,2776 3375,3119 3969,3462 4562,3119 5156,2776 "/>
+    <g>
+     <polygon class="fil2" points="2702,4261 3889,4947 3889,4261 3889,3576 3295,3233 2702,2890 "/>
+     <polygon class="fil0" points="2702,4261 2702,2890 2108,3233 1514,3576 "/>
+     <polygon class="fil1" points="3889,4947 2702,4261 2702,5632 3295,5290 "/>
+    </g>
+    <g>
+     <polygon class="fil2" points="5236,4261 5236,2890 4642,3233 4048,3576 4048,4261 4048,4947 "/>
+     <polygon class="fil0" points="5236,4261 4048,4947 4642,5290 5236,5632 "/>
+     <polygon class="fil1" points="5236,2890 5236,4261 6423,3576 5830,3233 "/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
